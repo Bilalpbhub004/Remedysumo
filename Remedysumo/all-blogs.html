@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>all blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/scss/index.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container">
+            <a href="/" class="text-center text-md-start"> <img src="assets/images/logo.png" alt="" class="logo"></a>
+            <a class="navbar-toggler order-last" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <small> <span class="navbar-toggler-icon text-light"></span></small>
+            </a>
+
+
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header border-bottom border-light-subtle">
+                    <button type="button" class="btn-close text-light" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 link-light fw-bold text-uppercase" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 link-light fw-bold text-uppercase" href="#">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 link-light fw-bold text-uppercase" href="#">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 link-light fw-bold text-uppercase" href="#">LifeStyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 link-light fw-bold text-uppercase" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 link-light fw-bold text-uppercase" href="#">Link</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <form class="d-flex my-2 my-lg-0 mx-auto mx-md-0 mx-lg-5" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control search-bar" placeholder="Search" aria-label="Search"
+                        aria-describedby="button-addon2" onkeyup="search(this)">
+                    <button class="btn btn-light rounded-end" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+
+                    <div
+                        class="position-absolute d-none bg-white w-100 border border-top-0 overflow-auto search_response-output top-100 end-0 z-2">
+                        <ul class="list-unstyled pt-2 d-flex flex-column container-fluid mb-0">
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit-cover rounded-lg mr-1 search_response-img"
+                                            height="100" width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img z-3"
+                                            height="100" width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/shopping_cart.webp"
+                                            class="h-100 object-fit rounded-lg mr-1 search_response-img" height="100"
+                                            width="120" alt="">
+                                        <div class="overflow-hidden d-flex align-items-center">
+                                            <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                Holiday shopping Holiday shopping
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div id="carouselExample" class="carousel slide container mt-5 mb-4 ">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href=""> <img src="assets/images/qure.png" class="carousel-img"></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""> <img src="assets/images/qure.png" class="carousel-img"></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""> <img src="assets/images/qure.png" class="carousel-img"></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Blog Section Start -->
+    <section>
+        <div class="container">
+            <h1 class="text-primary fw-bold text-center">
+                Latest Blogs
+            </h1>
+            <div class="row gap-lg-3 gy-3 justify-content-center my-5">
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <a href="#"> <img src="assets/images/qure.png" class="card-img-top object-fit-cover img-fluid"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <p class="text-black-50 d-flex align-items-center"><i
+                                    class="fa-solid fa-circle-user fs-5 me-2"></i><small>
+                                    2024-06-13</small>
+                            </p>
+                            <a href="" class="card-text fw-bold btn text-start link-primary p-0"><small>Creating a Home
+                                    that
+                                    is Sustain long Tips and
+                                    Tricks</small>
+                            </a>
+                            <div class="border-top border-secondary-subtle mt-4 pt-3 text-black-50">
+
+                                <i class="fa-solid fa-eye fs-5"></i> <span>101</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <a href="#"> <img src="assets/images/qure.png" class="card-img-top object-fit-cover img-fluid"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <p class="text-black-50 d-flex align-items-center"><i
+                                    class="fa-solid fa-circle-user fs-5 me-2"></i><small>
+                                    2024-06-13</small>
+                            </p>
+                            <a href="" class="card-text fw-bold btn text-start link-primary p-0"><small>Creating a Home
+                                    that
+                                    is Sustain long Tips and
+                                    Tricks</small>
+                            </a>
+                            <div class="border-top border-secondary-subtle mt-4 pt-3 text-black-50">
+
+                                <i class="fa-solid fa-eye fs-5"></i> <span>101</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <a href="#"> <img src="assets/images/qure.png" class="card-img-top object-fit-cover img-fluid"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <p class="text-black-50 d-flex align-items-center"><i
+                                    class="fa-solid fa-circle-user fs-5 me-2"></i><small>
+                                    2024-06-13</small>
+                            </p>
+                            <a href="" class="card-text fw-bold btn text-start link-primary p-0"><small>Creating a Home
+                                    that
+                                    is Sustain long Tips and
+                                    Tricks</small>
+                            </a>
+                            <div class="border-top border-secondary-subtle mt-4 pt-3 text-black-50">
+
+                                <i class="fa-solid fa-eye fs-5"></i> <span>101</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <a href="#"> <img src="assets/images/qure.png" class="card-img-top object-fit-cover img-fluid"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <p class="text-black-50 d-flex align-items-center"><i
+                                    class="fa-solid fa-circle-user fs-5 me-2"></i><small>
+                                    2024-06-13</small>
+                            </p>
+                            <a href="" class="card-text fw-bold btn text-start link-primary p-0"><small>Creating a Home
+                                    that
+                                    is Sustain long Tips and
+                                    Tricks</small>
+                            </a>
+                            <div class="border-top border-secondary-subtle mt-4 pt-3 text-black-50">
+
+                                <i class="fa-solid fa-eye fs-5"></i> <span>101</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <a href="#"> <img src="assets/images/qure.png" class="card-img-top object-fit-cover img-fluid"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <p class="text-black-50 d-flex align-items-center"><i
+                                    class="fa-solid fa-circle-user fs-5 me-2"></i><small>
+                                    2024-06-13</small>
+                            </p>
+                            <a href="" class="card-text fw-bold btn text-start link-primary p-0"><small>Creating a Home
+                                    that
+                                    is Sustain long Tips and
+                                    Tricks</small>
+                            </a>
+                            <div class="border-top border-secondary-subtle mt-4 pt-3 text-black-50">
+
+                                <i class="fa-solid fa-eye fs-5"></i> <span>101</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <a href="#"> <img src="assets/images/qure.png" class="card-img-top object-fit-cover img-fluid"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <p class="text-black-50 d-flex align-items-center"><i
+                                    class="fa-solid fa-circle-user fs-5 me-2"></i><small>
+                                    2024-06-13</small>
+                            </p>
+                            <a href="" class="card-text fw-bold btn text-start link-primary p-0"><small>Creating a Home
+                                    that
+                                    is Sustain long Tips and
+                                    Tricks</small>
+                            </a>
+                            <div class="border-top border-secondary-subtle mt-4 pt-3 text-black-50">
+
+                                <i class="fa-solid fa-eye fs-5"></i> <span>101</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-section text-md-center border text-light bg-light">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="my-4 text-center">
+                <!-- Facebook -->
+                <a href="#"
+                    class="btn btn-outline-primary text-light btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <i class="fab fa-facebook-f fs-5"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a href="#"
+                    class="btn btn-outline-primary text-light btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <i class="fab fa-twitter fs-5"></i>
+                </a>
+
+                <!-- Google -->
+                <a href="#"
+                    class="btn btn-outline-primary text-light btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <i class="fab fa-google fs-5"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="#"
+                    class="btn btn-outline-primary text-light btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <i class="fab fa-instagram fs-5"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a href="#"
+                    class="btn btn-outline-primary text-light btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <i class="fab fa-linkedin-in fs-5"></i>
+                </a>
+
+                <!-- Github -->
+                <a href="#"
+                    class="btn btn-outline-primary text-light btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center"
+                    style="width: 50px; height: 50px;">
+                    <i class="fab fa-github fs-5"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links -->
+            <section class="links-section my-5">
+                <!--Grid row-->
+                <div class="row justify-content-between align-items-center">
+                    <!-- Logo column -->
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Content -->
+                        <h6 class="text-lg-start text-center fw-bold mb-4">
+                            <img src="assets/images/logo.png" alt="" class="img-fluid logo">
+                        </h6>
+                        <p class="text-lg-start text-center">
+                            We would like this opportunity to address all our visitors and start by welcoming them to
+                            our platform. While using our services one might think why do we do what we do? it is
+                            definitely not for charity purposes so how does it benefit us? We would like to avail this
+                            opportunity to answer all your worries and our team is always here to answer all your
+                            relevant questions.
+                        </p>
+                    </div>
+                    <!-- Logo column -->
+
+                    <!--Link column-->
+                    <div class="col-lg-3 col-md-6 ms-lg-5">
+                        <h5 class="text-uppercase fw-bold text-start">QUICK LINKS</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="text-start">
+                                <small><i class="fa-solid fa-chevron-right"></i></small>
+                                <a href="#" class="text-body hover-text " href="#!"> <span
+                                        class="btn px-0 text-light">About
+                                        Us</span></a>
+                            </li>
+                            <li class="text-start">
+                                <small><i class="fa-solid fa-chevron-right"></i></small>
+                                <a href="#" class="text-body hover-text" href="#!"> <span class="btn px-0">Terms &
+                                        Conditions</span></a>
+                            </li>
+                            <li class="text-start">
+                                <small><i class="fa-solid fa-chevron-right"></i></small>
+                                <a href="#" class="text-body hover-text" href="#!"> <span class="btn px-0">Privacy
+                                        Policy</span></a>
+                            </li>
+                            <li class="text-start">
+                                <small><i class="fa-solid fa-chevron-right"></i></small>
+                                <a href="#" class="text-body hover-text" href="#!"> <span class="btn px-0">Contact
+                                        Us</span></a>
+                            </li>
+                            <li class="text-start">
+                                <small><i class="fa-solid fa-chevron-right"></i></small>
+                                <a href="#" class="text-body hover-text" href="#!"> <span class="btn px-0">How To Use
+                                        Coupon</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Link column-->
+
+
+                    <!-- Form column -->
+                    <div class="col-lg-4 col-md-10">
+                        <section>
+                            <form action="">
+
+                                <div class="row d-flex justify-content-center">
+
+                                    <div class="col-auto">
+                                        <h5 class="pt-2">
+                                            <strong>Sign up for our newsletter</strong>
+                                        </h5>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <!-- Email input -->
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Email Address"
+                                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <button class="btn btn-outline-light px-1 px-md-4" type="button"
+                                                id="button-addon2">Sign
+                                                Up</button>
+                                        </div>
+                                        <!-- Email input -->
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </section>
+                    </div>
+                    <!-- Form column -->
+
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center pb-2 pt-3 bg-primary">
+            <p>
+                © 2024 Remedysumo | All Rights Reserved
+            </p>
+            <p>
+                <span class="fw-bold">Disclosure:</span> We may earn commission if you use our
+                Links/Coupons/Voucher/Promos.
+            </p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>
